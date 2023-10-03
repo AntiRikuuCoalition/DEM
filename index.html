@@ -1,0 +1,20 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Inline Text</title>
+  <script>
+    setTimeout(function(){
+      fetch('ON.txt')
+        .then(function(response) {
+          return response.text();
+        })
+        .then(function(data) {
+          document.getElementById('text').textContent = data;
+        });
+    }, 200);
+  </script>
+</head>
+<body>
+  <div id="text"></div>
+</body>
+</html>

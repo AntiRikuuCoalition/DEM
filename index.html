@@ -3,15 +3,17 @@
   <meta charset="UTF-8">
   <title>Inline Text</title>
   <script>
-    setTimeout(function(){
-      fetch('https://antirikuucoalition.github.io/DEM/ON.txt')
-        .then(function(response) {
-          return response.text();
-        })
-        .then(function(data) {
-          document.getElementById('text').textContent = data;
-        });
-    }, 200);
+while(true) {
+  setTimeout(function(){
+    fetch('https://antirikuucoalition.github.io/DEM/ON.txt')
+      .then(function(response) {
+        return response.text();
+      })
+      .then(function(data) {
+        document.getElementById('text').textContent = data;
+      });
+  }, 1);
+}
   </script>
 </head>
 <body>
